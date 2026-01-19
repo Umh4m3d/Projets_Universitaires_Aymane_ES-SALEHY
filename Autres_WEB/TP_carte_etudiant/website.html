@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="stylecss.css">   
+</head>
+<body>
+    <header><h1>Welcome to my website</h1></header>
+<div class="card">
+    <h2>Connexion Utilisateur</h2>
+    <form id="loginForm" method="POST" action="login.php">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur" required minlength="3" maxlength="20"><br><br>
+    
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required minlength="8"><br><br>
+    
+        <button id="loginBtn" type="button">Login</button>
+    </form>
+  </div>
+
+  <div class="comment">
+    <h2>Laisser un Commentaire</h2>
+    <form action="traitement_commentaire.php" method="POST">
+    <label for="nom_com">Votre Nom :</label>
+    <input type="text" id="nom_com" name="nom_com" required><br>
+
+    <label for="commentaire">Votre Commentaire :</label>
+    <textarea id="commentaire" name="commentaire" rows="5" required maxlength="500"></textarea><br>
+    <button id="CommentSend" type="button">Partager</button>
+</form>
+</div>
+</div>
+</body>
+</html>
+<script>
+    document.getElementById("CommentSend").addEventListener("click", function() {
+    const name = document.getElementById("nom_com").value;
+    const comment = document.getElementById("commentaire").value;
+    if (name && comment) {
+      alert("Merci " + name + " pour votre commentaire !");
+      location.reload();
+    } else {
+      alert("Veuillez remplir tous les champs avant d'envoyer.");
+    }
+  });
+    document.getElementById("loginBtn").addEventListener("click", function() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      if (username && password) {
+        alert("Logged in as: " + username);
+      } else {
+        alert("Please fill in all fields.");
+      }
+    });
+    </script>
+    

@@ -1,0 +1,108 @@
+body {
+    background: darkgray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px 0 60px;
+    border-radius: 15px 50px 30px 5px;
+}
+
+
+.info .h3{}
+
+h3 {
+    color:#0E3386 ;
+    font-weight: bold;
+}
+
+header {
+    background-color: #0E3386;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    padding-left: 40px;
+	width: 900px;
+	height: 150px;
+    margin: 0 auto 0px;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header top{
+  flex: auto;
+  text-align: center;
+  font-weight: bold;
+
+}
+header img {
+    width: 150px;
+    height: 80px;
+    margin-right: 200px;
+}
+.carte {
+    position: relative;         
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.carte::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('eu.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.05;                       
+     z-index: 0;                      
+}
+
+* content above background */
+.carte > * {
+    position: relative;
+    z-index: 1;
+}
+.photo img {
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+}
+.info {
+    flex: auto;
+}
+.bottom{
+	background-color: darkgreen;
+    padding-left: 40px;
+	width: 900px;
+	height: 20px;
+    margin: 0 auto 0px;
+    border-radius: 0px 0px 20px 20px;
+
+}
+.Verso{
+	background-color: #0E3386;
+    color: white;
+	padding: 20px 20px 20px;
+	width: 900px;
+	height: 480px;
+    margin: 0 auto 0px;
+	margin-top: 100px;
+    font-size: 28px;
+	text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.bottomV{
+	background-color: white;
+    padding: 40px 20px;
+	width: 900px;
+	height: 40px;
+    margin: 0 auto 0px;
+    border-radius: 0px 0px 20px 20px;
+}

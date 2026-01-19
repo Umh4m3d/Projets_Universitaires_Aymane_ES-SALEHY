@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+    <header ><h1>Welcome to my website</h1></header>
+    <form action="traitement_login.php" method="POST">
+        <h2>Connexion Utilisateur</h2>
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur" required minlength="3" maxlength="20"><br><br>
+    
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required minlength="8"><br><br>
+    
+        <input type="submit" value="Se connecter">
+    </form>
+    <h2>Laisser un Commentaire</h2>
+    <form action="traitement_commentaire.php" method="POST">
+    <label for="nom_com">Votre Nom :</label>
+    <input type="text" id="nom_com" name="nom_com" required><br><br>
+
+    <label for="commentaire">Votre Commentaire :</label>
+    <textarea id="commentaire" name="commentaire" rows="5" required maxlength="500"></textarea><br><br>
+
+    <input type="submit" value="Envoyer Commentaire">
+</form>
+</body>
+</html>

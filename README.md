@@ -37,6 +37,9 @@ Ce README présente l’organisation générale et décrit le contenu de chaque 
 ## Auteur
 
 **Nom de l’étudiant :** Aymane Es-salehy
+
 **Enseignant :** Ahmed Amamou
+
 **Modules :** Web Secure Programming & Advanced Networking 
+
 **Année universitaire :** 2025–2026

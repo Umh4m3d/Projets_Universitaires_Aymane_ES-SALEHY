@@ -1,0 +1,12 @@
+.env
+.env.docker
+frontend/.env
+venv/
+app/venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.log

@@ -134,7 +134,7 @@ PostgreSQL
 ## 6. Structure du dépôt
 
 ```text
-campusops-github-ready/
+campusops/
 ├── app/                    # Backend FastAPI
 ├── bot/                    # Bot Telegram
 ├── frontend/               # Frontend React/Vite
